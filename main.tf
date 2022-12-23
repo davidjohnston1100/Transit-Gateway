@@ -8,19 +8,10 @@ terraform {
 }  
 
 provider "aws" {
-  alias  = "local"
   region = "us-east-1"
 }
 
 module "tgw" {
   source = "./modules/aws-transit-gateway"
-
-  #description = var.description
   
-  tags = {
-    Name = "Local TGW"
-  }
-  
-  #auto_accept_shared_attachments = var.auto_accept_shared_attachments
-  #dns_support = var.dns_support
 }
