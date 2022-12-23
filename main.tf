@@ -15,9 +15,7 @@ provider "aws" {
 module "tgw" {
   source = "./modules/aws-transit-gateway"
 
-  provider = aws.local
   description = var.description
-  
   
   /*tags = {
     Name = "Local TGW"
