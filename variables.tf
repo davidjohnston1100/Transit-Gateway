@@ -1,4 +1,4 @@
-variable "description" {
+/*variable "description" {
   description = "Description for TGW"
   type        = string
   default     = "TGW for US East 1"
@@ -14,4 +14,4 @@ variable "description" {
   description = "Bool value for dns support"
   type        = bool
   default     = true
- }
+ }*/
