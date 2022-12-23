@@ -1,8 +1,3 @@
-provider "aws" {
-  alias  = "local"
-  region = "us-east-2"
-}
-
 resource "aws_ec2_transit_gateway" "this" {
   #description = var.description
   #provider = aws.local
