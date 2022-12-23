@@ -15,12 +15,12 @@ provider "aws" {
 module "tgw" {
   source = "./modules/aws-transit-gateway"
 
-  description = var.description
+  #description = var.description
   
-  /*tags = {
+  tags = {
     Name = "Local TGW"
-  }*/
+  }
   
-  auto_accept_shared_attachments = var.auto_accept_shared_attachments
-  dns_support = var.dns_support
+  #auto_accept_shared_attachments = var.auto_accept_shared_attachments
+  #dns_support = var.dns_support
 }
