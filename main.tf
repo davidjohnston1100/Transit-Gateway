@@ -16,6 +16,7 @@ module "vpc" {
   version = "2.21.0"
 
   name = var.vpc_name
+  azs  = var.vpc_azs
   cidr = var.vpc_cidr
   private_subnets = var.vpc_private_subnets
   tags = var.vpc_tags
