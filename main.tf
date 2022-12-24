@@ -14,5 +14,5 @@ provider "aws" {
 module "tgw" {
   source = "./modules/aws-transit-gateway"
   
-  tgw_description = "AWS-Transit-Gateway for US-East-1"
+  description = "AWS-Transit-Gateway for US-East-1"
 }
