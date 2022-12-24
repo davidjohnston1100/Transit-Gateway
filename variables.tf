@@ -40,4 +40,5 @@ variable "vpc_azs" {
 variable "description" {
   description = "Description of TGW"
   type        = string
+  default     = "AWS-Transit-Gateway for US-East-1"
 }
