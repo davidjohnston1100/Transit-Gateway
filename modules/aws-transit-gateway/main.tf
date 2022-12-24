@@ -15,7 +15,7 @@ resource "aws_ec2_transit_gateway_vpc_attachment" "this" {
 }
 
 resource "aws_ec2_transit_gateway_peering_attachment" "this" {
-  count = var.create_Peer_attachment ? 1 : 0
+  count = var.create_peer_attachment ? 1 : 0
 
   peer_region             = var.peer_region
   peer_transit_gateway_id = var.peer_transit_gateway_id
