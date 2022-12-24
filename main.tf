@@ -35,7 +35,7 @@ module "tgw" {
   default_route_table_association = "enable"
   default_route_table_propagation = "enable"
   
-  subnet_ids         = var.vpc_private_subnets
+  subnet_ids         = module.vpc.subnet_ids
   transit_gateway_id = module.tgw.tgw_id
   vpc_id             = module.vpc.vpc_id
 }
