@@ -41,7 +41,7 @@ variable "tags" {
 variable "create_peer_attachment" {
   description = ""
   type        = bool
-  default     = false
+  default     = true
 }
 
 variable "peer_region" {
