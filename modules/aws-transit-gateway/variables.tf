@@ -39,14 +39,17 @@ variable "tags" {
 variable "subnet_ids" {
   description = "Private subnet ids for VPC TGW attachment"
   type        = list(string)
+  default = null
 }
 
 variable "transit_gateway_id" {
   description = ""
   type        = string
+  default = null
 }
 
 variable "vpc_id" {
   description = ""
   type        = string
+  default = null
 }
