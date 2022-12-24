@@ -26,3 +26,9 @@ variable "vpc_tags" {
     Environment = "dev"
   }
 }
+
+variable "vpc_azs" {
+  description = "Availability zones for VPC"
+  type        = list(string)
+  default     = ["us-east-1a", "us-east-1b"]
+}
