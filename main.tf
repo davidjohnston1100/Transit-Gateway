@@ -11,6 +11,17 @@ provider "aws" {
   region = "us-east-1"
 }
 
+module "vpc" {
+  source  = "terraform-aws-modules/vpc/aws"
+  version = "2.21.0"
+
+  name = var.vpc_name
+  cidr = var.vpc_cidr
+  azs             = var.vpc_azs
+  private_subnets = var.vpc_private_subnets
+  tags = var.vpc_tags
+}
+  
 module "tgw" {
   source = "./modules/aws-transit-gateway"
   
@@ -24,4 +35,8 @@ module "tgw" {
   
   default_route_table_association = "enable"
   default_route_table_propagation = "enable"
+  
+  subnet_ids         = var.vpc_private_subnets
+  transit_gateway_id = module.tgw.id
+  vpc_id             = module.tgw.id
 }
