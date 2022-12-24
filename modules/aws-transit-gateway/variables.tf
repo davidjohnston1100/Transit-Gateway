@@ -47,11 +47,13 @@ variable "create_peer_attachment" {
 variable "peer_region" {
   description = ""
   type        = string
+  default     = null 
 }
 
 variable "peer_transit_gateway_id" {
   description = ""
   type        = string
+  default     = null
 }
 
 #VPC Variables
