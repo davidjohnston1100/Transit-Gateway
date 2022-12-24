@@ -33,3 +33,20 @@ variable "tags" {
   type        = map(string)
   default     = {}
 }
+
+##############################################################
+
+variable "subnet_ids" {
+  description = "Private subnet ids for VPC TGW attachment"
+  type        = list(string)
+}
+
+variable "transit_gateway_id" {
+  description = ""
+  type        = string
+}
+
+variable "vpc_id" {
+  description = ""
+  type        = string
+}
