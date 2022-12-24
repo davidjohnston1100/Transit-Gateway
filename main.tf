@@ -38,5 +38,5 @@ module "tgw" {
   
   subnet_ids         = var.vpc_private_subnets
   transit_gateway_id = module.tgw.id
-  vpc_id             = module.tgw.id
+  vpc_id             = module.vpc.id
 }
