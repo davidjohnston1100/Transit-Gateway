@@ -1,3 +1,15 @@
+variable "default_route_table_association" {
+  description = ""
+  type        = string
+  default     = "enable"
+}
+
+variable "default_route_table_propagation" {
+  description = ""
+  type        = string
+  default     = "enable"
+}
+
 variable "description" {
   description = "Description of TGW"
   type        = string
