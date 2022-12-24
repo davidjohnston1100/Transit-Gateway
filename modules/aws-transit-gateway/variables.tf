@@ -54,11 +54,6 @@ variable "peer_transit_gateway_id" {
   type        = string
 }
 
-variable "transit_gateway_id" {
-  description = ""
-  type        = string
-}
-
 #VPC Variables
 ###########################################################################################################
 
