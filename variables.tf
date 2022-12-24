@@ -32,3 +32,12 @@ variable "vpc_azs" {
   type        = list(string)
   default     = ["us-east-1a", "us-east-1b"]
 }
+
+#TGW resources
+###############################################################################################
+
+
+variable "description" {
+  description = "Description of TGW"
+  type        = string
+}
