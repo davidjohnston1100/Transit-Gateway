@@ -25,7 +25,7 @@ module "vpc" {
 module "tgw" {
   source = "./modules/aws-transit-gateway"
   
-  description = "AWS-Transit-Gateway for US-East-1"
+  description = var.description
   auto_accept_shared_attachments = "enable"
   dns_support = "enable"
   
