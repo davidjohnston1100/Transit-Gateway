@@ -37,6 +37,6 @@ module "tgw" {
   default_route_table_propagation = "enable"
   
   subnet_ids         = var.vpc_private_subnets
-  transit_gateway_id = module.tgw.ec2_transit_gateway_id
+  transit_gateway_id = module.tgw.aws_ec2_transit_gateway_id
   vpc_id             = module.vpc.vpc_id
 }
