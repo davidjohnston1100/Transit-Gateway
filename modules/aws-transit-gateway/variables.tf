@@ -39,10 +39,10 @@ VPC Peer Attachment Variables
 ###########################################################################################################
 
 
-variable "create_Peer_attachment" {
+variable "create_peer_attachment" {
   description = ""
   type        = bool
-  default     = true
+  default     = false
 }
 
 variable "peer_region" {
