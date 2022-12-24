@@ -34,7 +34,7 @@ variable "tags" {
 }
 
 
-VPC Peer Attachment Variables
+#VPC Peer Attachment Variables
 ###########################################################################################################
 
 
@@ -59,7 +59,7 @@ variable "transit_gateway_id" {
   type        = string
   
 
-VPC Variables
+#VPC Variables
 ###########################################################################################################
 
 variable "subnet_ids" {
