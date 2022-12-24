@@ -34,7 +34,34 @@ variable "tags" {
   default     = {}
 }
 
-##############################################################
+
+VPC Peer Attachment Variables
+###########################################################################################################
+
+
+variable "create_Peer_attachment" {
+  description = ""
+  type        = bool
+  default     = true
+}
+
+variable "peer_region" {
+  description = ""
+  type        = string
+
+
+variable "peer_transit_gateway_id" {
+  description = ""
+  type        = string
+
+
+variable "transit_gateway_id" {
+  description = ""
+  type        = string
+  
+
+VPC Variables
+###########################################################################################################
 
 variable "subnet_ids" {
   description = "Private subnet ids for VPC TGW attachment"
@@ -53,8 +80,3 @@ variable "vpc_id" {
   type        = string
   default = null
 }
-
-variable "condition" {
-  
-}
-
