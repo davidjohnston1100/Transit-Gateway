@@ -16,4 +16,5 @@ module "tgw" {
   
   description = "AWS-Transit-Gateway for US-East-1"
   auto_accept_shared_attachments = "enable"
+  dns_support = "enable"
 }
