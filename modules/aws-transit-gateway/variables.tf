@@ -15,3 +15,9 @@ variable "dns_support" {
   type        = string
   default     = "enable"
 }
+
+variable "tags" {
+  description = "Tags to set on the bucket."
+  type        = map(string)
+  default     = {}
+}
