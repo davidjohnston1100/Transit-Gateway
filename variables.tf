@@ -42,3 +42,15 @@ variable "description" {
   type        = string
   default     = "AWS-Transit-Gateway for US-East-1"
 }
+
+variable "peer_region" {
+  description = ""
+  type        = string
+  default     = "us-east-2" 
+}
+
+variable "peer_transit_gateway_id" {
+  description = ""
+  type        = string
+  default     = "tgw-006998c383bd6622f"
+}
