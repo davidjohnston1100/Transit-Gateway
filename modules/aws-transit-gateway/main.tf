@@ -43,3 +43,11 @@ resource "aws_ec2_transit_gateway_route" "route_3" {
   transit_gateway_attachment_id  = var.transit_gateway_attachment_id
   transit_gateway_route_table_id = var.transit_gateway_route_table_id
 }
+
+resource "aws_ec2_transit_gateway_route" "route_4" {
+  count = var.create_peer_attachment ? 0 : 1
+ 
+  destination_cidr_block         = var.destination_cidr_block_4
+  transit_gateway_attachment_id  = var.transit_gateway_attachment_id
+  transit_gateway_route_table_id = var.transit_gateway_route_table_id
+}
