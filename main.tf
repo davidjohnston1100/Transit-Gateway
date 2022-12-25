@@ -46,4 +46,6 @@ module "tgw" {
   destination_cidr_block = "0.0.0.0/0"
   transit_gateway_attachment_id  = module.tgw.tgw_attachment_id
   transit_gateway_route_table_id = module.tgw.tgw_default_route_table_id
+    
+  destination_cidr_block = "10.6.1.0/24"
 }
