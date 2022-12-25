@@ -22,10 +22,16 @@ resource "aws_ec2_transit_gateway_peering_attachment" "this" {
   transit_gateway_id      = var.transit_gateway_id
 }
 
-resource "aws_ec2_transit_gateway_route" "this" {
-  count                          = var.tgw_routes
-  
-  destination_cidr_block         = var.destination_cidr_block
+resource "aws_ec2_transit_gateway_route" "route_1" {
+ 
+  destination_cidr_block         = var.destination_cidr_block_1
+  transit_gateway_attachment_id  = var.transit_gateway_attachment_id
+  transit_gateway_route_table_id = var.transit_gateway_route_table_id
+}
+
+resource "aws_ec2_transit_gateway_route" "route_2" {
+ 
+  destination_cidr_block         = var.destination_cidr_block_2
   transit_gateway_attachment_id  = var.transit_gateway_attachment_id
   transit_gateway_route_table_id = var.transit_gateway_route_table_id
 }
