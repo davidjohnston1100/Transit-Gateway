@@ -82,7 +82,7 @@ variable "vpc_id" {
 variable "tgw_routes" {
   description = ""
   type        = number
-  default     = 1
+  default     = 2
 }
 
 variable "destination_cidr_block" {
