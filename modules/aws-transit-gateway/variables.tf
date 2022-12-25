@@ -85,7 +85,13 @@ variable "tgw_routes" {
   default     = 2
 }
 
-variable "destination_cidr_block" {
+variable "destination_cidr_block_1" {
+  description = ""
+  type        = string
+  default = null
+}
+
+variable "destination_cidr_block_2" {
   description = ""
   type        = string
   default = null
