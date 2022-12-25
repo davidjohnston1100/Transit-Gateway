@@ -76,3 +76,32 @@ variable "vpc_id" {
   type        = string
   default = null
 }
+
+#############################################################################################################
+
+variable "tgw_routes" {
+  description = ""
+  type        = number
+  default     = 1
+}
+
+variable "destination_cidr_blockd" {
+  description = ""
+  type        = string
+  default = null
+}
+
+variable "transit_gateway_attachment_id" {
+  description = ""
+  type        = string
+  default = null
+}
+
+variable "transit_gateway_route_table_id" {
+  description = ""
+  type        = string
+  default = null
+}
+
+
+
