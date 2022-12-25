@@ -49,4 +49,5 @@ module "tgw" {
     
   destination_cidr_block_2 = "10.6.1.0/24"
   destination_cidr_block_3 = "10.6.2.0/24"
+  destination_cidr_block_4 = "10.6.3.0/24"
 }
