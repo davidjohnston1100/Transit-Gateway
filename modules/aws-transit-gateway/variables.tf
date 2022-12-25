@@ -79,11 +79,6 @@ variable "vpc_id" {
 
 #############################################################################################################
 
-variable "tgw_routes" {
-  description = ""
-  type        = number
-  default     = 2
-}
 
 variable "destination_cidr_block_1" {
   description = ""
@@ -92,6 +87,12 @@ variable "destination_cidr_block_1" {
 }
 
 variable "destination_cidr_block_2" {
+  description = ""
+  type        = string
+  default = null
+}
+
+variable "destination_cidr_block_3" {
   description = ""
   type        = string
   default = null
