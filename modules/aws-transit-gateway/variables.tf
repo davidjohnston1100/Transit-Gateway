@@ -98,6 +98,12 @@ variable "destination_cidr_block_3" {
   default = null
 }
 
+variable "destination_cidr_block_4" {
+  description = ""
+  type        = string
+  default = null
+}
+
 variable "transit_gateway_attachment_id" {
   description = ""
   type        = string
