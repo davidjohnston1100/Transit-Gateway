@@ -48,4 +48,5 @@ module "tgw" {
   transit_gateway_route_table_id = module.tgw.tgw_default_route_table_id
     
   destination_cidr_block_2 = "10.6.1.0/24"
+  destination_cidr_block_3 = "10.6.2.0/24"
 }
