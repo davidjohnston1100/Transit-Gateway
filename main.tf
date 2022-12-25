@@ -43,9 +43,9 @@ module "tgw" {
   peer_region             = var.peer_region
   peer_transit_gateway_id = var.peer_transit_gateway_id
     
-  destination_cidr_block = "0.0.0.0/0"
+  destination_cidr_block_1 = "0.0.0.0/0"
   transit_gateway_attachment_id  = module.tgw.tgw_attachment_id
   transit_gateway_route_table_id = module.tgw.tgw_default_route_table_id
     
-  destination_cidr_block = "10.6.1.0/24"
+  destination_cidr_block_2 = "10.6.1.0/24"
 }
