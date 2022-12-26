@@ -26,9 +26,7 @@ module "tgw" {
   source = "./modules/aws-transit-gateway"
   
   description = var.description 
-  tags = {
-    Name = "US-East-1 AWS-Transit-Gateway"
-  }
+  tags = var.tgw_name
   
   subnet_ids         = module.vpc.private_subnets
   transit_gateway_id = module.tgw.tgw_id
