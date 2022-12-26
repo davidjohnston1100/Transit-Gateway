@@ -36,6 +36,10 @@ variable "vpc_azs" {
 #TGW resources
 ###############################################################################################
 
+variable "tgw_name" {
+  description = "Description of TGW"
+  type        = string
+}
 
 variable "description" {
   description = "Description of TGW"
