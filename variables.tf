@@ -53,3 +53,9 @@ variable "peer_transit_gateway_id" {
   type        = string
   default     = null
 }
+
+variable "create_peer_attachment" {
+  description = ""
+  type        = bool
+  default     = true
+}
