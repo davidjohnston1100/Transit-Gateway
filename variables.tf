@@ -36,11 +36,6 @@ variable "vpc_azs" {
 #TGW resources
 ###############################################################################################
 
-variable "tgw_name" {
-  description = "Description of TGW"
-  type        = string
-}
-
 variable "description" {
   description = "Description of TGW"
   type        = string
@@ -50,11 +45,11 @@ variable "description" {
 variable "peer_region" {
   description = ""
   type        = string
-  default     = "us-east-2" 
+  default     = null
 }
 
 variable "peer_transit_gateway_id" {
   description = ""
   type        = string
-  default     = "tgw-006998c383bd6622f"
+  default     = null
 }
