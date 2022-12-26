@@ -25,11 +25,11 @@ module "vpc" {
 module "tgw" {
   source = "./modules/aws-transit-gateway"
   
-  description = var.description 
-  
   tags = {
     Name = "US-East-1 AWS-Transit-Gateway"
   }
+  
+  description = var.description 
   
   subnet_ids         = module.vpc.private_subnets
   transit_gateway_id = module.tgw.tgw_id
