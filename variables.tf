@@ -45,7 +45,7 @@ variable "description" {
 variable "peer_region" {
   description = ""
   type        = string
-  default     = "us-east-2
+  default     = "us-east-2"
 }
 
 variable "peer_transit_gateway_id" {
