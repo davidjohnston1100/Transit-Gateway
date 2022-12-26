@@ -45,13 +45,13 @@ variable "description" {
 variable "peer_region" {
   description = ""
   type        = string
-  default     = null
+  default     = "us-east-2
 }
 
 variable "peer_transit_gateway_id" {
   description = ""
   type        = string
-  default     = null
+  default     = "tgw-057fdca02cbce8ba8"
 }
 
 variable "create_peer_attachment" {
