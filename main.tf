@@ -25,16 +25,10 @@ module "vpc" {
 module "tgw" {
   source = "./modules/aws-transit-gateway"
   
-  description = var.description
-  #auto_accept_shared_attachments = "enable"
-  #dns_support = "enable"
-  
+  description = var.description 
   tags = {
     Name = "US-East-1 AWS-Transit-Gateway"
   }
-  
-  #default_route_table_association = "enable"
-  #default_route_table_propagation = "enable"
   
   subnet_ids         = module.vpc.private_subnets
   transit_gateway_id = module.tgw.tgw_id
