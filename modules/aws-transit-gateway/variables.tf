@@ -33,6 +33,12 @@ variable "tags" {
   default     = {}
 }
 
+variable "transit_gateway_attachment_id" {
+  description = ""
+  type        = string
+  default = null
+}
+
 
 #VPC Peer Attachment Variables
 ###########################################################################################################
@@ -56,29 +62,9 @@ variable "peer_transit_gateway_id" {
   default     = null
 }
 
-#VPC Variables
+
+#TGW routing
 ###########################################################################################################
-
-variable "subnet_ids" {
-  description = "Private subnet ids for VPC TGW attachment"
-  type        = list(string)
-  default = null
-}
-
-variable "transit_gateway_id" {
-  description = ""
-  type        = string
-  default = null
-}
-
-variable "vpc_id" {
-  description = ""
-  type        = string
-  default = null
-}
-
-#############################################################################################################
-
 
 variable "destination_cidr_block_1" {
   description = ""
@@ -104,12 +90,6 @@ variable "destination_cidr_block_4" {
   default = null
 }
 
-variable "transit_gateway_attachment_id" {
-  description = ""
-  type        = string
-  default = null
-}
-
 variable "transit_gateway_route_table_id" {
   description = ""
   type        = string
@@ -117,4 +97,25 @@ variable "transit_gateway_route_table_id" {
 }
 
 
+#VPC Variables
+###########################################################################################################
 
+variable "subnet_ids" {
+  description = "Private subnet ids for VPC TGW attachment"
+  type        = list(string)
+  default = null
+}
+
+variable "transit_gateway_id" {
+  description = ""
+  type        = string
+  default = null
+}
+
+variable "vpc_id" {
+  description = ""
+  type        = string
+  default = null
+}
+
+#############################################################################################################
